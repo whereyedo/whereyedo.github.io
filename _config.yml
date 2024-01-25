@@ -1,8 +1,7 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: "Whereyedo" # 사이트 이름
+title: "Whereyedo" # 사이트 상단 HONE & 상단 TAB
+description: "Whereyedo 기술블로그" # 사이트 설명으로 SEO(검색엔진)와 관계된 정보
 tags:
   - blog
   - template
@@ -13,13 +12,13 @@ show_hero: true
 menu:
   - title: Home
     url: /
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
-  - title: Feed
-    url: /feed.xml
-email: youremail@test.com
+#  - title: About
+#    url: /about
+#  - title: Contact
+#    url: /contact
+#  - title: Feed
+#    url: /feed.xml
+email: whereyedo@naver.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
@@ -29,12 +28,12 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
-instagram_username: instagram_username
-linkedin_username: linkedin_username
-medium_username: medium_username
+github_username: whereyedo
+#facebook_username: facebook_username
+#twitter_username: twitter_username
+#instagram_username: instagram_username
+#linkedin_username: linkedin_username
+#medium_username: medium_username
 
 
 # Posts Settings
@@ -45,8 +44,8 @@ two_columns_layout: true
 
 
 # Advanced Settings
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+baseurl: "" # 서브 경로
+url: "https://whereyedo.github.io" # 인터넷에 공개되는 주소
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
@@ -61,7 +60,7 @@ collections:
   authors:
     output: true
 paginate_path: "/page/:num/"
-show_get_theme_btn: true
+show_get_theme_btn: false # 우측 상산 Get this theme! 버튼 활성화 여부
 use_logo: false
 
 # Content paginator
