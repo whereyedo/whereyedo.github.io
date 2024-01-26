@@ -152,25 +152,3 @@ translations:
     after_send:
       title: "Message sent!"
       message: "Thank you for sending me a message. I'm going to answer ASAP."
-
-# 댓글
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "whereyedo-github-io"
-  discourse:
-    server: ""
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: default
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
