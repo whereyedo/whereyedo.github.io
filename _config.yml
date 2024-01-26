@@ -15,36 +15,19 @@ show_hero: true
 menu:
   - title: Home
     url: /
-#  - title: About
-#    url: /about
-#  - title: Contact
-#    url: /contact
-#  - title: Feed
-#    url: /feed.xml
+  - title: Tags
+    url: /tags
 email: whereyedo@naver.com
-# See: https://disqus.com/
-disqus_username: disqus_username
-# Contact Form Setting
-# See: https://formspree.io/
-formspree_form_id: formspree_form_id
-
+disqus_username: whereyedo
 
 # Social Media Settings
-# Remove the item if you don't need it
 github_username: whereyedo
-#facebook_username: facebook_username
-#twitter_username: twitter_username
-#instagram_username: instagram_username
-#linkedin_username: linkedin_username
-#medium_username: medium_username
-
 
 # Posts Settings
 show_time_bar: true
 show_modal_on_exit: false
 show_modal_on_finish_post: true
 two_columns_layout: true
-
 
 # Advanced Settings
 baseurl: "" # 서브 경로
