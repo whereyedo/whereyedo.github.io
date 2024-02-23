@@ -19,7 +19,6 @@ If you don't know what these are, check the Jekyll [documentation](https://jekyl
 A *Jekflix* post file looks like:
 
 ```yaml
-# _posts/2010-01-01-welcome-to-the-desert-of-the-real.md
 ---
 date: 2019-05-16 23:48:05
 layout: post
