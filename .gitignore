@@ -31,3 +31,7 @@ package.json
 *.gem
 .bundle
 .ruby-version
+
+# Intellij
+*.idea
+*.iml
