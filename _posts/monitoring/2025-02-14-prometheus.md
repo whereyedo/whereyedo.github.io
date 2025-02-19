@@ -4,7 +4,7 @@ title: CentOS에 Prometheus 설치하기
 date: 2025-02-14 14:29:00 +0900
 categories: [Monitoring]
 tags: [monitoring, prometheus]
-description: CentOS에 Prometheus를 설치하여 서버 모니터링하기
+description: CentOS에 Prometheus 설치하기
 toc: true
 math: true
 mermaid: true
@@ -123,8 +123,6 @@ Prometheus는 default로 9090 port를 사용하는데 CentOS에서 이미 9090 p
 ```bash
 sudo vi /etc/systemd/system/prometheus.service
 ```
-
-**1-2. 내용 추가**
 ```text
 [Unit]
 Description=Prometheus
@@ -143,6 +141,42 @@ ExecStart=/usr/local/bin/prometheus \
 --web.listen-address=0.0.0.0:9091 \ <- 추가된 부분
 [Install]
 WantedBy=multi-user.target
+```
+
+**1-2. prometheus.yml 파일 수정**
+```bash
+sudo vi /etc/prometheus/prometheus.yml
+```
+```text
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          # - alertmanager:9093
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: "prometheus"
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ["localhost:9091"] <-- 수정된 부분
 ```
 
 **1-3. 방화벽 설정**
