@@ -1,13 +1,11 @@
 ---
 layout: post
-title: CentOS에 Prometheus 설치하기
+title: Prometheus
 date: 2025-02-14 14:29:00 +0900
 categories: [Monitoring]
-tags: [monitoring, prometheus]
-description: CentOS에 Prometheus 설치하기
+tags: [Monitoring, Prometheus]
+description: Prometheus에 대해 알아보고, CentOS에 Prometheus 설치하기
 toc: true
-math: true
-mermaid: true
 ---
 
 ## Prometheus란?
