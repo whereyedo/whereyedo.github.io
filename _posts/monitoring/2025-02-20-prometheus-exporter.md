@@ -140,7 +140,7 @@ sudo systemctl start node_exporter
 
 ![img-description](/assets/img/post/monitoring/prometheusexporter/NodeExporterMetrics.png)
 
-다음으로 Prometheus 웹 UI에 접속하면 Node Exporter의 EndPoint와 Metrics가 추가된걸 확인할 수 있습니다.
+다음으로 Prometheus 웹 UI에 접속하면 Node Exporter의 Endpoint와 Metrics가 추가된걸 확인할 수 있습니다.
 
 ![img-description](/assets/img/post/monitoring/prometheusexporter/Endpoint.png)
 ![img-description](/assets/img/post/monitoring/prometheusexporter/PrometheusWeb.png)
